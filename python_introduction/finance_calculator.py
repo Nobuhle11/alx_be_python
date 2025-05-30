@@ -1,8 +1,9 @@
-# Ask the user for their current age
-current_age = int(input("How old are you? "))
+income = float(input("Enter your monthly income: "))
+expenses = float(input("Enter your total monthly expenses: "))
 
-# Calculate age in 2050
-future_age = current_age + 27
+monthly_savings = income - expenses
+annual_savings = monthly_savings * 12
+projected_savings = annual_savings + (annual_savings * 0.05)
 
-# Print result
-print(f"In 2050, you will be {future_age} years old.")
+print(f"Your monthly savings are ${monthly_savings}.")
+print(f"Projected savings after one year, with interest, is: ${projected_savings}.")
